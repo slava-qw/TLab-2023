@@ -67,13 +67,13 @@ P.S. для воспроизведения: `--seed=123`
 1. `learning_rate` = $3e-4$, `learning_rate_text` = $1e-5$:
    * Promt: *smile face*:
 
-        Image | <img src="imgs/1.png" width="155" height="165"/> | <img src="imgs/2.png" width="155" height="165"/> | <img src="imgs/3.png" width="155" height="165"/> |
+        Image | <img src="imgs/i1.png" width="155" height="165"/> | <img src="imgs/i2.png" width="155" height="165"/> | <img src="imgs/i3.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 1 | 3,6 | 4 |
         LORA_SCALE_UNET | 0,9 | 0,9 | 0,9 |
         LORA_SCALE_TEXT_ENCODER | 0,5 | 0,6 | 0,5 |
 
-        Image | <img src="imgs/4.png" width="155" height="165"/> | <img src="imgs/5.png" width="155" height="165"/> | <img src="imgs/6.png" width="155" height="165"/> |
+        Image | <img src="imgs/i4.png" width="155" height="165"/> | <img src="imgs/i5.png" width="155" height="165"/> | <img src="imgs/i6.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 2 | 3,4 |
         LORA_SCALE_UNET | 0,9 | 0,7 | 0,9 |
@@ -84,13 +84,13 @@ P.S. для воспроизведения: `--seed=123`
 
         Посмотрим насколько изментися результат, если в промте мы конкретно укажем на объект индефикатором (`--instance_prompt` $=$ ktn), используя промт *A ktn is smiling*.
 
-        Image | <img src="imgs/7.png" width="155" height="165"/> | <img src="imgs/8.png" width="155" height="165"/> | <img src="imgs/9.png" width="155" height="165"/> |
+        Image | <img src="imgs/i7.png" width="155" height="165"/> | <img src="imgs/i8.png" width="155" height="165"/> | <img src="imgs/i9.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 1 | 3,6 | 4 |
         LORA_SCALE_UNET | 0,9 | 0,9 | 0,9 |
         LORA_SCALE_TEXT_ENCODER | 0,5 | 0,6 | 0,5 |
 
-        Image | <img src="imgs/10.png" width="155" height="165"/> | <img src="imgs/11.png" width="155" height="165"/> | <img src="imgs/12.png" width="155" height="165"/> |
+        Image | <img src="imgs/i10.png" width="155" height="165"/> | <img src="imgs/i11.png" width="155" height="165"/> | <img src="imgs/i12.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 2 | 3,4 |
         LORA_SCALE_UNET | 0,9 | 0,7 | 0,9 |
@@ -103,7 +103,7 @@ P.S. для воспроизведения: `--seed=123`
 
         К сожалению, при данном запросе, получить каких-то осмысленных/правильных изображений не получилось, кикие бы гиперпараметры не использовались (скорее всего нужно дольше обучать модель), поэтому ниже приведу наиболее удачные из всех возможных (все остальные генерации можно посмотреть в соответсвующей папке):
 
-        Image | <img src="imgs/13.png" width="155" height="165"/> | <img src="imgs/14.png" width="155" height="165"/> | <img src="imgs/15.png" width="155" height="165"/> |
+        Image | <img src="imgs/i13.png" width="155" height="165"/> | <img src="imgs/i14.png" width="155" height="165"/> | <img src="imgs/i15.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3,2 | 3 | 3,6 |
         LORA_SCALE_UNET | 1 | 0,9 | 1 |
@@ -113,7 +113,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Посмотрим насколько изментися результат, если в промте мы конкретно укажем на объект индефикатором (`--instance_prompt` $=$ ktn), используя промт *A ktn is falling from the cliff*.
 
-        Image | <img src="imgs/16.png" width="155" height="165"/> | <img src="imgs/17.png" width="155" height="165"/> | <img src="imgs/18.png" width="155" height="165"/> |
+        Image | <img src="imgs/i16.png" width="155" height="165"/> | <img src="imgs/i17.png" width="155" height="165"/> | <img src="imgs/i18.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3,2 | 3 | 3,6 |
         LORA_SCALE_UNET | 1 | 0,9 | 1 |
@@ -125,7 +125,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Аналогично получилось и тут, поэтому покажу только самые удачные:
 
-        Image | <img src="imgs/19.png" width="155" height="165"/> | <img src="imgs/20.png" width="155" height="165"/> | <img src="imgs/21.png" width="155" height="165"/> |
+        Image | <img src="imgs/i19.png" width="155" height="165"/> | <img src="imgs/i20.png" width="155" height="165"/> | <img src="imgs/i21.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 5 | 9 |
         LORA_SCALE_UNET | 1 | 1 | 1 |
@@ -133,7 +133,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Посмотрим насколько изментися результат, если в промте мы конкретно укажем на объект индефикатором (`--instance_prompt` $=$ ktn), используя промт *A ktn is sitting in the pub*.
 
-        Image | <img src="imgs/22.png" width="155" height="165"/> | <img src="imgs/23.png" width="155" height="165"/> | <img src="imgs/24.png" width="155" height="165"/> |
+        Image | <img src="imgs/i22.png" width="155" height="165"/> | <img src="imgs/i23.png" width="155" height="165"/> | <img src="imgs/i24.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 5 | 9 |
         LORA_SCALE_UNET | 1 | 1 | 1 |
@@ -146,13 +146,13 @@ P.S. для воспроизведения: `--seed=123`
 
         Результаты для сравнения:
 
-        Image | <img src="imgs/25.png" width="155" height="165"/> | <img src="imgs/26.png" width="155" height="165"/> | <img src="imgs/27.png" width="155" height="165"/> |
+        Image | <img src="imgs/i25.png" width="155" height="165"/> | <img src="imgs/i26.png" width="155" height="165"/> | <img src="imgs/i27.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 1 | 3,6 | 4 |
         LORA_SCALE_UNET | 0,9 | 0,9 | 0,9 |
         LORA_SCALE_TEXT_ENCODER | 0,5 | 0,6 | 0,5 |
 
-        Image | <img src="imgs/28.png" width="155" height="165"/> | <img src="imgs/29.png" width="155" height="165"/> | <img src="imgs/30.png" width="155" height="165"/> |
+        Image | <img src="imgs/i28.png" width="155" height="165"/> | <img src="imgs/i29.png" width="155" height="165"/> | <img src="imgs/i30.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 2 | 3,4 |
         LORA_SCALE_UNET | 0,9 | 0,7 | 0,9 |
@@ -162,13 +162,13 @@ P.S. для воспроизведения: `--seed=123`
 
         Для промта *A ktn is smiling*.
 
-        Image | <img src="imgs/31.png" width="155" height="165"/> | <img src="imgs/32.png" width="155" height="165"/> | <img src="imgs/33.png" width="155" height="165"/> |
+        Image | <img src="imgs/i31.png" width="155" height="165"/> | <img src="imgs/i32.png" width="155" height="165"/> | <img src="imgs/i33.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 1 | 3,6 | 4 |
         LORA_SCALE_UNET | 0,9 | 0,9 | 0,9 |
         LORA_SCALE_TEXT_ENCODER | 0,5 | 0,6 | 0,5 |
 
-        Image | <img src="imgs/34.png" width="155" height="165"/> | <img src="imgs/35.png" width="155" height="165"/> | <img src="imgs/36.png" width="155" height="165"/> |
+        Image | <img src="imgs/i34.png" width="155" height="165"/> | <img src="imgs/i35.png" width="155" height="165"/> | <img src="imgs/i36.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 2 | 3,4 |
         LORA_SCALE_UNET | 0,9 | 0,7 | 0,9 |
@@ -180,7 +180,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Результаты для сравнения:
 
-        Image | <img src="imgs/37.png" width="155" height="165"/> | <img src="imgs/38.png" width="155" height="165"/> | <img src="imgs/39.png" width="155" height="165"/> |
+        Image | <img src="imgs/i37.png" width="155" height="165"/> | <img src="imgs/i38.png" width="155" height="165"/> | <img src="imgs/i39.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3,2 | 3 | 3,6 |
         LORA_SCALE_UNET | 1 | 0,9 | 1 |
@@ -190,7 +190,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Наиболее удачными были следующие гиперпараметры инференса при данной настройке: 
         
-        Image | <img src="imgs/40.png" width="155" height="165"/> | <img src="imgs/41.png" width="155" height="165"/> | <img src="imgs/42.png" width="155" height="165"/> |
+        Image | <img src="imgs/i40.png" width="155" height="165"/> | <img src="imgs/i41.png" width="155" height="165"/> | <img src="imgs/i42.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 2,6 | 3,8 | 3 |
         LORA_SCALE_UNET | 1 | 1 | 0,8 |
@@ -198,7 +198,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Для промта *A ktn is falling from the cliff*:
 
-        Image | <img src="imgs/43.png" width="155" height="165"/> | <img src="imgs/44.png" width="155" height="165"/> | <img src="imgs/45.png" width="155" height="165"/> |
+        Image | <img src="imgs/i43.png" width="155" height="165"/> | <img src="imgs/i44.png" width="155" height="165"/> | <img src="imgs/i45.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3,2 | 3 | 3,6 |
         LORA_SCALE_UNET | 1 | 0,9 | 1 |
@@ -210,7 +210,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Результаты для сравнения:
 
-        Image | <img src="imgs/46.png" width="155" height="165"/> | <img src="imgs/47.png" width="155" height="165"/> | <img src="imgs/48.png" width="155" height="165"/> |
+        Image | <img src="imgs/i46.png" width="155" height="165"/> | <img src="imgs/i47.png" width="155" height="165"/> | <img src="imgs/i48.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 5 | 9 |
         LORA_SCALE_UNET | 1 | 1 | 1 |
@@ -220,7 +220,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Наиболее удачными были следующие гиперпараметры инференса при данной настройке:
 
-        Image | <img src="imgs/49.png" width="155" height="165"/> | <img src="imgs/50.png" width="155" height="165"/> | <img src="imgs/51.png" width="155" height="165"/> |
+        Image | <img src="imgs/i49.png" width="155" height="165"/> | <img src="imgs/i50.png" width="155" height="165"/> | <img src="imgs/i51.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 5 | 9 |
         LORA_SCALE_UNET | 1 | 1 | 1 |
@@ -231,7 +231,7 @@ P.S. для воспроизведения: `--seed=123`
 
         Для промта *A ktn is falling from the cliff*:
 
-        Image | <img src="imgs/52.png" width="155" height="165"/> | <img src="imgs/53.png" width="155" height="165"/> | <img src="imgs/54.png" width="155" height="165"/> |
+        Image | <img src="imgs/i52.png" width="155" height="165"/> | <img src="imgs/i53.png" width="155" height="165"/> | <img src="imgs/i54.png" width="155" height="165"/> |
         :---: | :---: | :---: | :---:
         GUIDANCE | 3 | 5 | 9 |
         LORA_SCALE_UNET | 1 | 1 | 1 |
@@ -248,34 +248,34 @@ P.S. для воспроизведения: `--seed=123`
     * Promt: *smile face*:
         
         <!-- <img src="imgs/4e-4; 5e-5/all_together/sf_2.png" width="325" height="325"/> G = 2-->
-        <img src="imgs/55.png" width="525" height="525"/>
+        <img src="imgs/i55.png" width="525" height="525"/>
         <!-- <img src="imgs/4e-4; 5e-5/all_together/sf_4.5.png" width="325" height="325"/> G = 4.5-->
 
     * Promt: *A ktn is smiling*:
 
-        <img src="imgs/56.png" width="525" height="525"/>
+        <img src="imgs/i56.png" width="525" height="525"/>
 
     Намного лучше получился результат (что в принципе очеыидно).
 
     * Promt: *falling from the cliff*:
         
         <!-- <img src="imgs/4e-4; 5e-5/all_together/fc_2.png" width="325" height="325"/> G = 2-->
-        <img src="imgs/57.png" width="525" height="525"/>
+        <img src="imgs/i57.png" width="525" height="525"/>
         <!-- <img src="imgs/4e-4; 5e-5/all_together/fc_4.5.png" width="325" height="325"/> G = 4.5-->
 
     * Promt: *A ktn is falling from the cliff*:
 
-        <img src="imgs/58.png" width="525" height="525"/>
+        <img src="imgs/i58.png" width="525" height="525"/>
 
     * Promt: *sitting in the pub*:
         
         <!-- <img src="imgs/4e-4; 5e-5/all_together/sp_2.png" width="325" height="325"/> G = 2-->
-        <img src="imgs/59.png" width="525" height="525"/>
+        <img src="imgs/i59.png" width="525" height="525"/>
         <!-- <img src="imgs/4e-4; 5e-5/all_together/sp_4.5.png" width="325" height="325"/> G = 4.5-->
 
     * Promt: *A ktn is sitting in the pub*:
 
-        <img src="imgs/60.png" width="525" height="525"/>
+        <img src="imgs/i60.png" width="525" height="525"/>
 
     Для всех промтов при данной настройке гиперпараметров обучения, видно, что наиболее схожий (с описанием и оригиналом) результат получается при `learning_rate` больше $0.8$ и при любом `learning_rate_text` в этих условиях. Причем при конкретном указании объекта в промте результат стал в разы лучше.
 
@@ -285,36 +285,36 @@ P.S. для воспроизведения: `--seed=123`
     * Promt: *smile face*:
 
         <!-- <img src="imgs/1e-4, 1e-5; 5000/all_together/sf_2.png" width="325" height="325"/> G = 2-->
-        <img src="imgs/61.png" width="525" height="525"/>
+        <img src="imgs/i61.png" width="525" height="525"/>
         <!-- <img src="imgs/1e-4, 1e-5; 5000/all_together/sf_4.5.png" width="325" height="325"/> G = 4.5-->
 
         Интересным показалось, что при определённых гиперпараметрах инференса, модель пыталась сгенерировать (и довольно удачно) женскую версию исходного персонажа.
     
     * Promt: *A ktn is smiling*:
 
-        <img src="imgs/62.png" width="525" height="525"/>
+        <img src="imgs/i62.png" width="525" height="525"/>
 
     * Promt: *falling from the cliff*:
         
         <!-- <img src="imgs/1e-4, 1e-5; 5000/all_together/fc_2.png" width="325" height="325"/> G = 2-->
-        <img src="imgs/63.png" width="525" height="525"/>
+        <img src="imgs/i63.png" width="525" height="525"/>
         <!-- <img src="imgs/1e-4, 1e-5; 5000/all_together/fc_4.5.png" width="325" height="325"/> G = 4.5-->
     
     * Promt: *A ktn is falling from the cliff*:
 
-        <img src="imgs/64.png" width="525" height="525"/>
+        <img src="imgs/i64.png" width="525" height="525"/>
 
         Модель хоть и отрисовывает персонажа, но изобразить его в падающем состоянии всё равно не получается.
 
     * Promt: *sitting in the pub*:
         
         <!-- <img src="imgs/1e-4, 1e-5; 5000/all_together/sp_2.png" width="325" height="325"/> G = 2-->
-        <img src="imgs/65.png" width="525" height="525"/>
+        <img src="imgs/i65.png" width="525" height="525"/>
         <!-- <img src="imgs/1e-4, 1e-5; 5000/all_together/sp_4.5.png" width="325" height="325"/> G = 4.5-->
 
     * Promt: *A ktn is sitting in the pub*:
 
-        <img src="imgs/66.png" width="525" height="525"/>
+        <img src="imgs/i66.png" width="525" height="525"/>
 
     По сравнению с предыдущими результатами, видно что количество шагов положительно влияет на сходсво полученных (на основе описания) изображений с оригиналом. Начиная уже с `learning_rate` равным 0.6 (а при генирации улыбки даже и с 0.4) изображения хорошо описывают заданный промт в стилистике оригинала. Но, стоит отментиь, что в большинстве изображений остались артефакты, например, такие как неправильная анатомия.
 
